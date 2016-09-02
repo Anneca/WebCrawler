@@ -6,12 +6,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
+
 /**
  * Classe responsável por identificar quais são as tecnologias utilizadas pelos sites
  * @author Anne
  *
  */
-public class ExtratorTecnologias {
+public class ExtratorTecnologias implements ExtratorInterface {
 
 	Document doc;
 	
@@ -60,6 +62,18 @@ public class ExtratorTecnologias {
 			// TODO: handle exception
 		}
 
+	}
+
+	@Override
+	public void extrairInformacoesHospital(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void extrairAcessibilidade(String url) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

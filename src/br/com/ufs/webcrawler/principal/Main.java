@@ -1,7 +1,9 @@
 package br.com.ufs.webcrawler.principal;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import br.com.ufs.webcrawler.model.URLs;
+import br.com.ufs.webcrawler.util.Conexao;
 
 public class Main {
 
@@ -9,6 +11,7 @@ public class Main {
 
 		ExtratorTecnologias extratorTecnologias = new ExtratorTecnologias();
 		ExtratorInformacoesHospital extratorInformacoesHospital = new ExtratorInformacoesHospital();
+		Conexao conexao = new Conexao();
 
 		//Temporario Essas informações deverão vim de uma tabela
 		ArrayList<URLs> urlsHospitais = new ArrayList<URLs>();
@@ -26,16 +29,22 @@ public class Main {
 		urlsHospitais.add(endereco1);
 		urlsHospitais.add(endereco2);
 		urlsHospitais.add(endereco3);
-
-
-		for (int i = 0; i < urlsHospitais.size(); i++) {
-			
-			extratorInformacoesHospital.extrairInformacoesHospital(urlsHospitais.get(i).getDescricao());				
-			System.out.println("Tecnologias:");
-			String url = urlsHospitais.get(i).getDescricao();
-			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""));
-
+		
+		try {
+			conexao.setConnection();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		
+//		for (int i = 0; i < urlsHospitais.size(); i++) {
+//			
+//			extratorInformacoesHospital.extrairInformacoesHospital(urlsHospitais.get(i).getDescricao());				
+//			System.out.println("Tecnologias:");
+//			String url = urlsHospitais.get(i).getDescricao();
+//			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""));
+//
+//		}
 	}
 
 }

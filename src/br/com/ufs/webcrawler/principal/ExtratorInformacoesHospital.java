@@ -6,8 +6,9 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import br.com.ufs.webcrawler.enumeration.Tags;
+import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
 
-public class ExtratorInformacoesHospital {
+public class ExtratorInformacoesHospital implements ExtratorInterface {
 
 	Document doc;
 	boolean servicos;
@@ -129,5 +130,17 @@ public class ExtratorInformacoesHospital {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+	}
+
+	@Override
+	public void extrairTecnologias(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void extrairAcessibilidade(String url) {
+		// TODO Auto-generated method stub
+		
 	}
 }
