@@ -5,7 +5,6 @@ public class Hospital {
 	String nome;
 	int codigo;
 	String url;
-	String logradouro;	
 	Cidade cidade;
 	Pais pais;
 	
@@ -27,12 +26,7 @@ public class Hospital {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getLogradouro() {
-		return logradouro;
-	}
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
-	}
+	
 	public Cidade getCidade() {
 		return cidade;
 	}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dados_conexao>
+	<database>
+		<name>WebCrawler</name>
+	</database>
+	<user>
+		<name>postgres</name>
+	</user>
+	<password>
+		<name>Enilorac28</name>
+	</password>
+	<host>
+		<name>localhost:5433</name>
+	</host>
+</dados_conexao>

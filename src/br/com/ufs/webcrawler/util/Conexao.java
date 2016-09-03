@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Conexao {
 
-	public Connection conexao = null;
+	public Connection conexao;
 
 	public Conexao() {
 
@@ -16,8 +16,6 @@ public class Conexao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("Carregou");
-
 	}
 
 	/**
@@ -28,7 +26,6 @@ public class Conexao {
 		Conexao teste = new Conexao();
 		try {
 			teste.setConnection();
-			System.out.println("Conectado!!");
 		} catch (SQLException ex) {
 			ex.printStackTrace();
 		}
@@ -39,12 +36,11 @@ public class Conexao {
 	 */
 	public void setConnection() throws SQLException {
 		String host = "localhost:5433";
-		String database = "WebCrawler";
+		String database = "WEB_CRAWLER_03-09-2016";
 		String url = "jdbc:postgresql://" + host + "/" + database;
 		String user = "postgres";
 		String password = "Enilorac28";
 		conexao = DriverManager.getConnection(url, user, password);
-		System.out.println("Conexão criada");
 
 	}
 

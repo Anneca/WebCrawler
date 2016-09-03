@@ -2,8 +2,10 @@ package br.com.ufs.webcrawler.principal;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import br.com.ufs.webcrawler.model.URLs;
-import br.com.ufs.webcrawler.util.Conexao;
+
+import br.com.ufs.webcrawler.dao.HospitalDAO;
+import br.com.ufs.webcrawler.model.Hospital;
+
 
 public class Main {
 
@@ -11,40 +13,25 @@ public class Main {
 
 		ExtratorTecnologias extratorTecnologias = new ExtratorTecnologias();
 		ExtratorInformacoesHospital extratorInformacoesHospital = new ExtratorInformacoesHospital();
-		Conexao conexao = new Conexao();
+		HospitalDAO hospitalDAO = new HospitalDAO();
 
-		//Temporario Essas informações deverão vim de uma tabela
-		ArrayList<URLs> urlsHospitais = new ArrayList<URLs>();
+		ArrayList<Hospital> hospitais = new ArrayList<Hospital>();
 
-		URLs endereco1 = new URLs();
-		URLs endereco2 = new URLs();
-		URLs endereco3 = new URLs();
-
-
-		endereco1.setDescricao("http://www.redeprimavera.com.br/hospital/");
-		endereco2.setDescricao("http://www.unimedse.com.br/v2/index.php");
-		endereco3.setDescricao("http://www.hobr.com.br/");
-		
-		// Preenchendo vetor com as URLs
-		urlsHospitais.add(endereco1);
-		urlsHospitais.add(endereco2);
-		urlsHospitais.add(endereco3);
-		
 		try {
-			conexao.setConnection();
+			// conexao.setConnection();
+			hospitais = hospitalDAO.listarHospitais();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-//		for (int i = 0; i < urlsHospitais.size(); i++) {
-//			
-//			extratorInformacoesHospital.extrairInformacoesHospital(urlsHospitais.get(i).getDescricao());				
-//			System.out.println("Tecnologias:");
-//			String url = urlsHospitais.get(i).getDescricao();
-//			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""));
-//
-//		}
+
+		for (int i = 0; i < hospitais.size(); i++) {
+			String url = hospitais.get(i).getUrl();
+			extratorInformacoesHospital.extrairInformacoesHospital(url);
+			System.out.println("Tecnologias:");
+			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""));
+
+		}
 	}
 
 }
