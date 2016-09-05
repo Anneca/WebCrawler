@@ -1,0 +1,80 @@
+package br.com.ufs.webcrawler.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+
+import br.com.ufs.webcrawler.model.Tecnologia;
+import br.com.ufs.webcrawler.util.Conexao;
+
+public class TecnologiaDAO {
+
+	Conexao con = new Conexao();
+
+	public Tecnologia criartecnologia(String nomeTecnologia) throws SQLException {
+
+		Tecnologia tec;
+		consultarTecnologiaByNome(nomeTecnologia);
+
+		if (verificarTecnologiaByNome(nomeTecnologia)) {
+			System.out.println("Tecnologia já cadastrada");
+			return null;
+		} else {
+
+			String sql = "Insert into tecnologia (cv_descricao) values ('" + nomeTecnologia + "')";
+
+			con.setConnection();
+			Statement comando = con.conexao.createStatement();
+			System.out.println("Executar insercao:" + sql);
+			comando.execute(sql);
+			tec = consultarTecnologiaByNome(nomeTecnologia);
+			comando.close();
+			return null;
+		}
+
+	}
+
+	public boolean verificarTecnologiaByNome(String nome) throws SQLException {
+
+		boolean tecnologia = false;
+		String sql = "select * from tecnologia t where t.cv_descricao ='" + nome + "'";
+
+		con.setConnection();
+		Statement comando = con.conexao.createStatement();
+		// System.out.println("Executar consulta:" + sql);
+		ResultSet resultado = comando.executeQuery(sql);
+
+		Tecnologia tec = new Tecnologia();
+
+		while (resultado.next()) {
+
+			tec.setCodigo(resultado.getInt("id_tecnologia"));
+			tec.setDescricao(resultado.getString("cv_descricao"));
+			tecnologia = true;
+		}
+		comando.close();
+		return tecnologia;
+	}
+
+	public Tecnologia consultarTecnologiaByNome(String nome) throws SQLException {
+
+		String sql = "select * from tecnologia t where t.cv_descricao ='" + nome + "'";
+
+		con.setConnection();
+		Statement comando = con.conexao.createStatement();
+		// System.out.println("Executar consulta:" + sql);
+		ResultSet resultado = comando.executeQuery(sql);
+
+		Tecnologia tec = new Tecnologia();
+
+		while (resultado.next()) {
+
+			tec.setCodigo(resultado.getInt("id_tecnologia"));
+			tec.setDescricao(resultado.getString("cv_descricao"));
+		}
+		comando.close();
+		return tec;
+	}
+
+}

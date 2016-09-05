@@ -27,7 +27,7 @@ public class Main {
 
 		for (int i = 0; i < hospitais.size(); i++) {			
 			String url = hospitais.get(i).getUrl();
-			extratorInformacoesHospital.extrairInformacoesHospital(url);
+			//extratorInformacoesHospital.extrairInformacoesHospital(url);
 			System.out.println("Tecnologias:");
 			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""));
 
