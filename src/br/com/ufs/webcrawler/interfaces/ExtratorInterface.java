@@ -11,4 +11,7 @@ public interface ExtratorInterface {
 	public void extrairInformacoesHospital(String url);
 
 	public void extrairAcessibilidade(String url);
+	
+	public void extrairRedesSociais(String url);
+
 }		

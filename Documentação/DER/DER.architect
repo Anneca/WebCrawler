@@ -107,19 +107,28 @@
     <column id="COL27" populated="true" UUID="c72702cb-3243-4e79-ab68-1971fe4c93c0" autoIncrement="true" autoIncrementSequenceName="formulario_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL28" populated="true" UUID="39226c0c-9268-4fbc-865a-236686b2002c" autoIncrement="false" autoIncrementSequenceName="formulario_dt_formulario_seq" defaultValue="" name="dt_formulario" nullable="0" physicalName="dt_formulario" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL28" populated="true" UUID="97a73855-6e15-4779-a8f3-d121d1310ab2" autoIncrement="false" autoIncrementSequenceName="formulario_id_hospital_seq" defaultValue="" name="id_hospital" nullable="0" physicalName="id_hospital" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL29" populated="true" UUID="c1c4ff83-f73f-4aa8-8918-8e8698957f69" autoIncrement="false" autoIncrementSequenceName="formulario_char_informacoes_institucionais_seq" defaultValue="" name="char_informacoes_institucionais" nullable="1" physicalName="char_informacoes_institucionais" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+    <column id="COL29" populated="true" UUID="a471ab89-8107-4349-bf1b-7728b7e6b4ea" autoIncrement="false" autoIncrementSequenceName="hospital_id_pais_seq" defaultValue="" name="id_pais" nullable="0" physicalName="id_pais" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL30" populated="true" UUID="2fb1c411-d23f-4029-ac7c-8512b27a180f" autoIncrement="false" autoIncrementSequenceName="formulario_char_servicos_seq" defaultValue="" name="char_servicos" nullable="1" physicalName="char_servicos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+    <column id="COL30" populated="true" UUID="3ca82646-2311-4a4a-b975-3be207e041ad" autoIncrement="false" autoIncrementSequenceName="hospital_id_cidade_seq" defaultValue="" name="id_cidade" nullable="0" physicalName="id_cidade" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL31" populated="true" UUID="6d8845b1-e80c-4d0d-ad65-8e1c27079557" autoIncrement="false" autoIncrementSequenceName="formulario_char_comentarios_seq" defaultValue="" name="char_comentarios" nullable="1" physicalName="char_comentarios" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+    <column id="COL31" populated="true" UUID="39226c0c-9268-4fbc-865a-236686b2002c" autoIncrement="false" autoIncrementSequenceName="formulario_dt_formulario_seq" defaultValue="" name="dt_formulario" nullable="0" physicalName="dt_formulario" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL32" populated="true" UUID="f31b0386-d521-4bd3-8b7f-c1a022986053" autoIncrement="false" autoIncrementSequenceName="formulario_char_corpo_clinico_seq" defaultValue="" name="char_corpo_clinico" nullable="1" physicalName="char_corpo_clinico" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+    <column id="COL32" populated="true" UUID="c1c4ff83-f73f-4aa8-8918-8e8698957f69" autoIncrement="false" autoIncrementSequenceName="formulario_char_informacoes_institucionais_seq" defaultValue="" name="char_informacoes_institucionais" nullable="1" physicalName="char_informacoes_institucionais" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="2fb1c411-d23f-4029-ac7c-8512b27a180f" autoIncrement="false" autoIncrementSequenceName="formulario_char_servicos_seq" defaultValue="" name="char_servicos" nullable="1" physicalName="char_servicos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL34" populated="true" UUID="6d8845b1-e80c-4d0d-ad65-8e1c27079557" autoIncrement="false" autoIncrementSequenceName="formulario_char_comentarios_seq" defaultValue="" name="char_comentarios" nullable="1" physicalName="char_comentarios" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="f31b0386-d521-4bd3-8b7f-c1a022986053" autoIncrement="false" autoIncrementSequenceName="formulario_char_corpo_clinico_seq" defaultValue="" name="char_corpo_clinico" nullable="1" physicalName="char_corpo_clinico" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
      <remarks></remarks>
     </column>
     </folder>
@@ -128,140 +137,107 @@
     <folder id="FOLTAB262" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB264" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX33" populated="true" UUID="66349839-4222-430b-906f-f9f90c0667eb" clustered="false" name="formulario_pk" physicalName="formulario_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC34" populated="true" UUID="759ca479-82e1-4345-aedc-3c504743fdf9" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="id_formulario" physicalName="id_formulario" />
+    <index id="IDX36" populated="true" UUID="66349839-4222-430b-906f-f9f90c0667eb" clustered="false" name="formulario_pk" physicalName="formulario_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC37" populated="true" UUID="759ca479-82e1-4345-aedc-3c504743fdf9" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="id_formulario" physicalName="id_formulario" />
+     <index-column id="IDC38" populated="true" UUID="deba8e94-e94b-4da3-b406-ba6227282cf3" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="id_hospital" physicalName="id_hospital" />
+     <index-column id="IDC39" populated="true" UUID="a4a6faf7-f794-4a90-a114-4816e1f0592c" ascendingOrDescending="UNSPECIFIED" column-ref="COL29" name="id_pais" physicalName="id_pais" />
+     <index-column id="IDC40" populated="true" UUID="3cbb914e-5448-4cdb-99ff-19576c6e3042" ascendingOrDescending="UNSPECIFIED" column-ref="COL30" name="id_cidade" physicalName="id_cidade" />
     </index>
    </folder>
   </table>
-  <table id="TAB35" populated="true" UUID="03b576d6-ad79-4f29-8cf0-166e26dcc365" name="rede_social" objectType="TABLE" physicalName="rede_social" >
+  <table id="TAB41" populated="true" UUID="03b576d6-ad79-4f29-8cf0-166e26dcc365" name="rede_social" objectType="TABLE" physicalName="rede_social" >
    <remarks></remarks>
-   <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL36" populated="true" UUID="19e35658-29d2-48f2-8614-331c83fdff2a" autoIncrement="true" autoIncrementSequenceName="rede_social_id_rede_social_seq" defaultValue="" name="id_rede_social" nullable="0" physicalName="id_rede_social" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+   <folder id="FOLTAB411" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL42" populated="true" UUID="19e35658-29d2-48f2-8614-331c83fdff2a" autoIncrement="true" autoIncrementSequenceName="rede_social_id_rede_social_seq" defaultValue="" name="id_rede_social" nullable="0" physicalName="id_rede_social" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL37" populated="true" UUID="2b61cb0c-dea8-4920-b508-98b3a2206d2a" autoIncrement="false" autoIncrementSequenceName="rede_social_cv_descricao_seq" defaultValue="" name="cv_descricao" nullable="0" physicalName="cv_descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL43" populated="true" UUID="2b61cb0c-dea8-4920-b508-98b3a2206d2a" autoIncrement="false" autoIncrementSequenceName="rede_social_cv_descricao_seq" defaultValue="" name="cv_descricao" nullable="0" physicalName="cv_descricao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB353" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB413" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB412" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX38" populated="true" UUID="cab5cebc-2162-4648-a96a-f5674bbb5944" clustered="false" name="rede_social_pk" physicalName="rede_social_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC39" populated="true" UUID="367a32af-8a36-44ef-88e4-4d2e93206edc" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="id_rede_social" physicalName="id_rede_social" />
+    <folder id="FOLTAB414" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX44" populated="true" UUID="cab5cebc-2162-4648-a96a-f5674bbb5944" clustered="false" name="rede_social_pk" physicalName="rede_social_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC45" populated="true" UUID="367a32af-8a36-44ef-88e4-4d2e93206edc" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="id_rede_social" physicalName="id_rede_social" />
     </index>
    </folder>
   </table>
-  <table id="TAB40" populated="true" UUID="cece8b4c-e386-4ba9-9c7f-aef3fdbcce57" name="formulario_hospital" objectType="TABLE" physicalName="formulario_hospital" >
+  <table id="TAB46" populated="true" UUID="54c74ba5-ca23-472a-8053-1b6d70f2e691" name="formulario_tecnologia" objectType="TABLE" physicalName="formulario_tecnologia" >
    <remarks></remarks>
-   <folder id="FOLTAB401" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL41" populated="true" UUID="ba61ac48-e252-44ad-a041-ad72ffe00126" autoIncrement="true" autoIncrementSequenceName="formulario_hospital_id_formulario_hospital_seq" defaultValue="" name="id_formulario_hospital" nullable="0" physicalName="id_formulario_hospital" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+   <folder id="FOLTAB461" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL47" populated="true" UUID="cb80ac24-5c6b-4e1e-a346-84a31e322c6a" autoIncrement="true" autoIncrementSequenceName="formulario_tecnologia_id_formulario_tecnologia_seq" defaultValue="" name="id_formulario_tecnologia" nullable="0" physicalName="id_formulario_tecnologia" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL42" populated="true" UUID="77c53f4f-8803-4ec4-b19d-d154a996b777" autoIncrement="false" autoIncrementSequenceName="formulario_hospital_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL48" populated="true" UUID="3adad648-22e0-4a1b-809d-e2f27a87e252" autoIncrement="false" autoIncrementSequenceName="formulario_tecnologia_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL43" populated="true" UUID="71bd3ef7-ef9a-45cd-b828-1a14344a3061" autoIncrement="false" autoIncrementSequenceName="formulario_hospital_id_hospital_seq" defaultValue="" name="id_hospital" nullable="0" physicalName="id_hospital" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    <column id="COL44" populated="true" UUID="ff7f3978-78fd-48e3-9bbd-31819a783ab4" autoIncrement="false" autoIncrementSequenceName="hospital_id_pais_seq_1" defaultValue="" name="id_pais" nullable="0" physicalName="id_pais" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    <column id="COL45" populated="true" UUID="aff29838-acb7-4518-9b0c-47c2fc3aaf11" autoIncrement="false" autoIncrementSequenceName="hospital_id_cidade_seq_1" defaultValue="" name="id_cidade" nullable="0" physicalName="id_cidade" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL49" populated="true" UUID="03f7ae81-906a-48e0-b5ad-401fa9cf7003" autoIncrement="false" autoIncrementSequenceName="formulario_tecnologia_id_tecnologia_seq" defaultValue="" name="id_tecnologia" nullable="0" physicalName="id_tecnologia" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB403" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB463" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB402" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB462" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB404" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX46" populated="true" UUID="42aa228e-c22c-42c9-958f-42cfddf10456" clustered="false" name="formulario_hospital_pk" physicalName="formulario_hospital_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC47" populated="true" UUID="4d1be68c-bb3e-43a7-92db-9ce7fa34f036" ascendingOrDescending="UNSPECIFIED" column-ref="COL41" name="id_formulario_hospital" physicalName="id_formulario_hospital" />
-     <index-column id="IDC48" populated="true" UUID="353a5474-66f5-474a-bf60-2055b341c123" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="id_formulario" physicalName="id_formulario" />
-     <index-column id="IDC49" populated="true" UUID="62f74638-4a96-4f14-ba9c-1ade24dedea1" ascendingOrDescending="UNSPECIFIED" column-ref="COL43" name="id_hospital" physicalName="id_hospital" />
-     <index-column id="IDC50" populated="true" UUID="1b7adba5-f8a7-4fc5-a55e-efb4b664c5ed" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="id_pais" physicalName="id_pais" />
-     <index-column id="IDC51" populated="true" UUID="39685178-12ef-4f50-8c74-199f516512c4" ascendingOrDescending="UNSPECIFIED" column-ref="COL45" name="id_cidade" physicalName="id_cidade" />
+    <folder id="FOLTAB464" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX50" populated="true" UUID="d3222f8c-d6ea-4dd1-9d30-d74f08598bec" clustered="false" name="formulario_tecnologia_pk" physicalName="formulario_tecnologia_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC51" populated="true" UUID="5d807990-a091-4048-97de-e2a325c8af8e" ascendingOrDescending="UNSPECIFIED" column-ref="COL47" name="id_formulario_tecnologia" physicalName="id_formulario_tecnologia" />
+     <index-column id="IDC52" populated="true" UUID="ff215264-e156-4676-a6a7-4db29440f3e1" ascendingOrDescending="UNSPECIFIED" column-ref="COL48" name="id_formulario" physicalName="id_formulario" />
+     <index-column id="IDC53" populated="true" UUID="36f28b41-9b09-4445-9cf2-a23332fc906c" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="id_tecnologia" physicalName="id_tecnologia" />
     </index>
    </folder>
   </table>
-  <table id="TAB52" populated="true" UUID="54c74ba5-ca23-472a-8053-1b6d70f2e691" name="formulario_tecnologia" objectType="TABLE" physicalName="formulario_tecnologia" >
+  <table id="TAB54" populated="true" UUID="adf298dc-14d6-4820-a414-8d1386e8ed7f" name="formulario_redes_sociais" objectType="TABLE" physicalName="formulario_redes_sociais" >
    <remarks></remarks>
-   <folder id="FOLTAB521" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL53" populated="true" UUID="cb80ac24-5c6b-4e1e-a346-84a31e322c6a" autoIncrement="true" autoIncrementSequenceName="formulario_tecnologia_id_formulario_tecnologia_seq" defaultValue="" name="id_formulario_tecnologia" nullable="0" physicalName="id_formulario_tecnologia" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+   <folder id="FOLTAB541" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL55" populated="true" UUID="994c5ea2-3da9-437d-a38d-05aae293515b" autoIncrement="true" autoIncrementSequenceName="formulario_redes_sociais_id_formulario_redes_sociais_seq" defaultValue="" name="id_formulario_redes_sociais" nullable="0" physicalName="id_formulario_redes_sociais" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL54" populated="true" UUID="3adad648-22e0-4a1b-809d-e2f27a87e252" autoIncrement="false" autoIncrementSequenceName="formulario_tecnologia_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL56" populated="true" UUID="490ccdd6-ce99-4a91-b6c1-a14ebdffd73b" autoIncrement="false" autoIncrementSequenceName="formulario_redes_sociais_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL55" populated="true" UUID="03f7ae81-906a-48e0-b5ad-401fa9cf7003" autoIncrement="false" autoIncrementSequenceName="formulario_tecnologia_id_tecnologia_seq" defaultValue="" name="id_tecnologia" nullable="0" physicalName="id_tecnologia" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    </folder>
-    <folder id="FOLTAB523" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
-    </folder>
-    <folder id="FOLTAB522" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
-    </folder>
-    <folder id="FOLTAB524" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX56" populated="true" UUID="d3222f8c-d6ea-4dd1-9d30-d74f08598bec" clustered="false" name="formulario_tecnologia_pk" physicalName="formulario_tecnologia_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC57" populated="true" UUID="5d807990-a091-4048-97de-e2a325c8af8e" ascendingOrDescending="UNSPECIFIED" column-ref="COL53" name="id_formulario_tecnologia" physicalName="id_formulario_tecnologia" />
-     <index-column id="IDC58" populated="true" UUID="ff215264-e156-4676-a6a7-4db29440f3e1" ascendingOrDescending="UNSPECIFIED" column-ref="COL54" name="id_formulario" physicalName="id_formulario" />
-     <index-column id="IDC59" populated="true" UUID="36f28b41-9b09-4445-9cf2-a23332fc906c" ascendingOrDescending="UNSPECIFIED" column-ref="COL55" name="id_tecnologia" physicalName="id_tecnologia" />
-    </index>
-   </folder>
-  </table>
-  <table id="TAB60" populated="true" UUID="adf298dc-14d6-4820-a414-8d1386e8ed7f" name="formulario_redes_sociais" objectType="TABLE" physicalName="formulario_redes_sociais" >
-   <remarks></remarks>
-   <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL61" populated="true" UUID="994c5ea2-3da9-437d-a38d-05aae293515b" autoIncrement="true" autoIncrementSequenceName="formulario_redes_sociais_id_formulario_redes_sociais_seq" defaultValue="" name="id_formulario_redes_sociais" nullable="0" physicalName="id_formulario_redes_sociais" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    <column id="COL62" populated="true" UUID="490ccdd6-ce99-4a91-b6c1-a14ebdffd73b" autoIncrement="false" autoIncrementSequenceName="formulario_redes_sociais_id_formulario_seq" defaultValue="" name="id_formulario" nullable="0" physicalName="id_formulario" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    <column id="COL63" populated="true" UUID="27d87998-a4a9-4c84-99da-6d7c6add247a" autoIncrement="false" autoIncrementSequenceName="formulario_redes_sociais_id_redes_sociais_seq" defaultValue="" name="id_rede_social" nullable="0" physicalName="id_rede_social" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL57" populated="true" UUID="27d87998-a4a9-4c84-99da-6d7c6add247a" autoIncrement="false" autoIncrementSequenceName="formulario_redes_sociais_id_redes_sociais_seq" defaultValue="" name="id_rede_social" nullable="0" physicalName="id_rede_social" precision="0" primaryKeySeq="2" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB603" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB543" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB542" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB604" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX64" populated="true" UUID="a4c1a26b-b8ee-4338-b900-db2c5d742aed" clustered="false" name="formulario_redes_sociais_pk" physicalName="formulario_redes_sociais_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC65" populated="true" UUID="ab81fb7b-e6e0-4153-8ea4-bb45ddfd647c" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="id_formulario_redes_sociais" physicalName="id_formulario_redes_sociais" />
-     <index-column id="IDC66" populated="true" UUID="da92e823-a165-4a6d-ba63-d445d6305af1" ascendingOrDescending="UNSPECIFIED" column-ref="COL62" name="id_formulario" physicalName="id_formulario" />
-     <index-column id="IDC67" populated="true" UUID="b850044e-38b6-4d2e-b832-2af67c4fdfe1" ascendingOrDescending="UNSPECIFIED" column-ref="COL63" name="id_rede_social" physicalName="id_rede_social" />
+    <folder id="FOLTAB544" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX58" populated="true" UUID="a4c1a26b-b8ee-4338-b900-db2c5d742aed" clustered="false" name="formulario_redes_sociais_pk" physicalName="formulario_redes_sociais_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC59" populated="true" UUID="ab81fb7b-e6e0-4153-8ea4-bb45ddfd647c" ascendingOrDescending="UNSPECIFIED" column-ref="COL55" name="id_formulario_redes_sociais" physicalName="id_formulario_redes_sociais" />
+     <index-column id="IDC60" populated="true" UUID="da92e823-a165-4a6d-ba63-d445d6305af1" ascendingOrDescending="UNSPECIFIED" column-ref="COL56" name="id_formulario" physicalName="id_formulario" />
+     <index-column id="IDC61" populated="true" UUID="b850044e-38b6-4d2e-b832-2af67c4fdfe1" ascendingOrDescending="UNSPECIFIED" column-ref="COL57" name="id_rede_social" physicalName="id_rede_social" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL68" populated="true" UUID="7d82b834-531b-47be-8669-87a737139e5c" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="true" name="hospital_formulario_hospital_fk" physicalName="hospital_formulario_hospital_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP69" populated="true" UUID="ee7c6ef7-0c6c-47ea-955d-5792e0674d93" fk-column-ref="COL43" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
-    <column-mapping id="CMP70" populated="true" UUID="9e1ce6f0-b174-493b-97b7-61408ae8c87b" fk-column-ref="COL44" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
-    <column-mapping id="CMP71" populated="true" UUID="ac970d1d-23e7-48c7-a3ff-aa409a4bcb64" fk-column-ref="COL45" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL4" />
+   <relationship id="REL62" populated="true" UUID="9fadd576-2da0-4b23-b900-87a1e55cc6b6" deferrability="7" deleteRule="3" fk-table-ref="TAB26" fkCardinality="7" identifying="true" name="hospital_formulario_fk" physicalName="hospital_formulario_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP63" populated="true" UUID="4d7e707f-4c73-4fdc-ba65-b96897694dc6" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+    <column-mapping id="CMP64" populated="true" UUID="df494de8-e6fc-422f-a2f4-7f2abf0d41fa" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+    <column-mapping id="CMP65" populated="true" UUID="a8028ed4-2b23-4b12-aaa4-a16520364009" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL4" />
    </relationship>
-   <relationship id="REL72" populated="true" UUID="dd8234b9-a98c-48d8-914f-e1557d653ff7" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="tecnologia_formulario_tecnologia_fk" physicalName="tecnologia_formulario_tecnologia_fk" pk-table-ref="TAB11" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP73" populated="true" UUID="bb29f548-293a-4d00-b545-c220190ddb4e" fk-column-ref="COL55" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL12" />
+   <relationship id="REL66" populated="true" UUID="dd8234b9-a98c-48d8-914f-e1557d653ff7" deferrability="7" deleteRule="3" fk-table-ref="TAB46" fkCardinality="7" identifying="true" name="tecnologia_formulario_tecnologia_fk" physicalName="tecnologia_formulario_tecnologia_fk" pk-table-ref="TAB11" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP67" populated="true" UUID="bb29f548-293a-4d00-b545-c220190ddb4e" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL12" />
    </relationship>
-   <relationship id="REL74" populated="true" UUID="f2cbf488-c62a-4206-8cc8-c8b3f8f800a8" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="cidade_hospital_fk" physicalName="cidade_hospital_fk" pk-table-ref="TAB16" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP75" populated="true" UUID="53233b20-35fc-4900-b6cd-ecf7b804d68b" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL17" />
+   <relationship id="REL68" populated="true" UUID="f2cbf488-c62a-4206-8cc8-c8b3f8f800a8" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="cidade_hospital_fk" physicalName="cidade_hospital_fk" pk-table-ref="TAB16" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP69" populated="true" UUID="53233b20-35fc-4900-b6cd-ecf7b804d68b" fk-column-ref="COL4" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL17" />
    </relationship>
-   <relationship id="REL76" populated="true" UUID="ea58bd38-064d-45c7-93d7-58544de0a5d6" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="pais_hospital_fk" physicalName="pais_hospital_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP77" populated="true" UUID="475052d0-b187-41e0-aa5b-45488c71f301" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
+   <relationship id="REL70" populated="true" UUID="ea58bd38-064d-45c7-93d7-58544de0a5d6" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="pais_hospital_fk" physicalName="pais_hospital_fk" pk-table-ref="TAB21" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP71" populated="true" UUID="475052d0-b187-41e0-aa5b-45488c71f301" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL22" />
    </relationship>
-   <relationship id="REL78" populated="true" UUID="47bfbd87-ac8e-4e34-a1d9-e6ebf3dce8c2" deferrability="7" deleteRule="3" fk-table-ref="TAB52" fkCardinality="7" identifying="true" name="formulario_formulario_tecnologia_fk" physicalName="formulario_formulario_tecnologia_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP79" populated="true" UUID="8815d089-2263-425c-afc2-a5ab80e68354" fk-column-ref="COL54" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   <relationship id="REL72" populated="true" UUID="47bfbd87-ac8e-4e34-a1d9-e6ebf3dce8c2" deferrability="7" deleteRule="3" fk-table-ref="TAB46" fkCardinality="7" identifying="true" name="formulario_formulario_tecnologia_fk" physicalName="formulario_formulario_tecnologia_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP73" populated="true" UUID="8815d089-2263-425c-afc2-a5ab80e68354" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
-   <relationship id="REL80" populated="true" UUID="ac4f77e2-6f7a-49f5-98c2-6c0ba2a16f07" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="formulario_formulario_redes_sociais_fk" physicalName="formulario_formulario_redes_sociais_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP81" populated="true" UUID="510f8bd6-bfec-4690-8908-d2b46832881c" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+   <relationship id="REL74" populated="true" UUID="ac4f77e2-6f7a-49f5-98c2-6c0ba2a16f07" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="true" name="formulario_formulario_redes_sociais_fk" physicalName="formulario_formulario_redes_sociais_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP75" populated="true" UUID="510f8bd6-bfec-4690-8908-d2b46832881c" fk-column-ref="COL56" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
-   <relationship id="REL82" populated="true" UUID="e9e93c6d-974d-4e60-aa4f-4c446dc799e5" deferrability="7" deleteRule="3" fk-table-ref="TAB40" fkCardinality="7" identifying="true" name="formulario_formulario_hospital_fk" physicalName="formulario_formulario_hospital_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP83" populated="true" UUID="7fab43cb-9bc0-44de-8882-2f51afc2cfd2" fk-column-ref="COL42" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
-   </relationship>
-   <relationship id="REL84" populated="true" UUID="52497005-e06e-466e-83ed-927c960cec82" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="true" name="rede_social_formulario_redes_sociais_fk" physicalName="rede_social_formulario_redes_sociais_fk" pk-table-ref="TAB35" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP85" populated="true" UUID="d5ab3255-6be4-4b90-933b-8cb12fa409c1" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL36" />
+   <relationship id="REL76" populated="true" UUID="52497005-e06e-466e-83ed-927c960cec82" deferrability="7" deleteRule="3" fk-table-ref="TAB54" fkCardinality="7" identifying="true" name="rede_social_formulario_redes_sociais_fk" physicalName="rede_social_formulario_redes_sociais_fk" pk-table-ref="TAB41" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP77" populated="true" UUID="d5ab3255-6be4-4b90-933b-8cb12fa409c1" fk-column-ref="COL57" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL42" />
    </relationship>
   </relationships>
  </target-database>
@@ -273,19 +249,17 @@
   <table-pane table-ref="TAB11" x="40" y="323" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB16" x="112" y="154" bgColor="0xeeeeee" fgColor="0x0000cc" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB21" x="861" y="154" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB26" x="520" y="489" bgColor="0xeeeeee" fgColor="0xcc0000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB35" x="951" y="325" bgColor="0xeeeeee" fgColor="0x5229a3" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB40" x="475" y="291" bgColor="0xeeeeee" fgColor="0x006633" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB52" x="20" y="480" bgColor="0xeeeeee" fgColor="0xec7000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB60" x="914" y="511" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL76" pkConnection="0.5238095238095238" fkConnection="0.4774774774774775" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL74" pkConnection="0.5238095238095238" fkConnection="0.4774774774774775" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL78" pkConnection="0.3779527559055118" fkConnection="0.7341772151898734" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL72" pkConnection="0.5263157894736842" fkConnection="0.471976401179941" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL80" pkConnection="0.4881889763779528" fkConnection="0.5063291139240507" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
-  <table-link relationship-ref="REL84" pkConnection="0.5092250922509225" fkConnection="0.4888268156424581" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL82" pkConnection="0.48120300751879697" fkConnection="0.5092592592592593" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL68" pkConnection="0.5258964143426295" fkConnection="0.4783950617283951" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-pane table-ref="TAB26" x="488" y="462" bgColor="0xeeeeee" fgColor="0xcc0000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB41" x="951" y="325" bgColor="0xeeeeee" fgColor="0x5229a3" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB46" x="20" y="480" bgColor="0xeeeeee" fgColor="0xec7000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB54" x="914" y="511" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL70" pkConnection="0.5238095238095238" fkConnection="0.4774774774774775" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL68" pkConnection="0.5238095238095238" fkConnection="0.4774774774774775" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL72" pkConnection="0.3779527559055118" fkConnection="0.7341772151898734" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL66" pkConnection="0.5263157894736842" fkConnection="0.471976401179941" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL74" pkConnection="0.4881889763779528" fkConnection="0.5063291139240507" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL76" pkConnection="0.5092250922509225" fkConnection="0.4888268156424581" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL62" pkConnection="0.5179282868525896" fkConnection="0.4699248120300752" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">

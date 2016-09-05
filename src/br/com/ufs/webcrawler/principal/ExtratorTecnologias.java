@@ -76,4 +76,10 @@ public class ExtratorTecnologias implements ExtratorInterface {
 		
 	}
 
+	@Override
+	public void extrairRedesSociais(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

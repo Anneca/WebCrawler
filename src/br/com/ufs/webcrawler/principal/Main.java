@@ -25,7 +25,7 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		for (int i = 0; i < hospitais.size(); i++) {
+		for (int i = 0; i < hospitais.size(); i++) {			
 			String url = hospitais.get(i).getUrl();
 			extratorInformacoesHospital.extrairInformacoesHospital(url);
 			System.out.println("Tecnologias:");

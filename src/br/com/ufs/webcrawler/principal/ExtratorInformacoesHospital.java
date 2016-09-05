@@ -5,8 +5,13 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import br.com.ufs.webcrawler.dao.FormularioDAO;
+import br.com.ufs.webcrawler.dao.FormularioHospitalDAO;
+import br.com.ufs.webcrawler.dao.HospitalDAO;
 import br.com.ufs.webcrawler.enumeration.Tags;
 import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
+import br.com.ufs.webcrawler.model.Formulario;
+import br.com.ufs.webcrawler.model.Hospital;
 
 public class ExtratorInformacoesHospital implements ExtratorInterface {
 
@@ -16,6 +21,13 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 	boolean redesSociais;
 	boolean comentarios;
 	boolean corpoClinico;
+	String temServicos;
+	String temInfoInstitucional;
+	String temComentario;
+	String temCorpoClinico;
+	FormularioDAO formularioDAO = new FormularioDAO();
+	HospitalDAO hospitalDAO = new HospitalDAO();
+	FormularioHospitalDAO formularioHospitalDAO = new FormularioHospitalDAO();
 
 	public void extrairInformacoesHospital(String url) {
 
@@ -30,6 +42,10 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 			redesSociais = false;
 			comentarios = false;
 			corpoClinico = false;
+			temServicos = "Não";
+			temInfoInstitucional = "Não";
+			temComentario = "Não";
+			temCorpoClinico = "Não";
 
 			for (Tags tag : Tags.values()) {
 
@@ -44,6 +60,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)cirurgia.*")) {
 
 						servicos = true;
+						temServicos = "Sim";
 					}
 
 					if (element.outerHtml().matches(".*(?i)sobre.*")
@@ -59,6 +76,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)Quem Somos.*")) {
 
 						informacoesInstitucionais = true;
+						temInfoInstitucional = "Sim";
 					}
 
 					if (element.outerHtml().matches(".*(?i)facebook.*")
@@ -72,6 +90,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)snapchat.*")) {
 
 						redesSociais = true;
+						
 					}
 
 					if (element.outerHtml().matches(".*(?i)fale-conosco.*")
@@ -81,6 +100,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)contato.*")) {
 
 						comentarios = true;
+						temComentario = "Sim";
 					}
 
 					if (element.outerHtml().matches(".*(?i)corpo-clinico.*")
@@ -90,11 +110,12 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)funcionario.*")) {
 
 						corpoClinico = true;
+						temCorpoClinico = "Sim";
 					}
 				}
 
 			}
-
+	
 			System.out.println();
 			System.out.println("Hospital na posição " + url.replaceAll("http://", ""));
 
@@ -126,6 +147,12 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 			if (corpoClinico) {
 				System.out.println("Corpo Clínico: SIM ");
 			}
+			
+			// Criando um formulário
+			Formulario form = formularioDAO.criarFormulario(temServicos, temInfoInstitucional, temComentario, temCorpoClinico);
+			Hospital hospital = hospitalDAO.getHospitalByURLs(url);
+			formularioHospitalDAO.criarFormularioHospital(hospital.getCodigo(), form.getCodigo());
+			
 
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -140,6 +167,12 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 
 	@Override
 	public void extrairAcessibilidade(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void extrairRedesSociais(String url) {
 		// TODO Auto-generated method stub
 		
 	}
