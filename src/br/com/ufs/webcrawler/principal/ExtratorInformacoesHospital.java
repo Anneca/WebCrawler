@@ -29,7 +29,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 	HospitalDAO hospitalDAO = new HospitalDAO();
 	FormularioHospitalDAO formularioHospitalDAO = new FormularioHospitalDAO();
 
-	public void extrairInformacoesHospital(String url) {
+	public Formulario extrairInformacoesHospital(String url) {
 
 		try {
 
@@ -152,11 +152,12 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 			Formulario form = formularioDAO.criarFormulario(temServicos, temInfoInstitucional, temComentario, temCorpoClinico);
 			Hospital hospital = hospitalDAO.getHospitalByURLs(url);
 			formularioHospitalDAO.criarFormularioHospital(hospital.getCodigo(), form.getCodigo());
-			
+			return form;
 
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		return null; 
 	}
 
 	@Override

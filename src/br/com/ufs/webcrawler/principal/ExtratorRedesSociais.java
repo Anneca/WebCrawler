@@ -7,6 +7,7 @@ import org.jsoup.select.Elements;
 
 import br.com.ufs.webcrawler.enumeration.Tags;
 import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
+import br.com.ufs.webcrawler.model.Formulario;
 
 public class ExtratorRedesSociais implements ExtratorInterface {
 
@@ -79,9 +80,9 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 	}
 
 	@Override
-	public void extrairInformacoesHospital(String url) {
+	public Formulario extrairInformacoesHospital(String url) {
 		// TODO Auto-generated method stub
-
+		return null;
 	}
 
 	@Override

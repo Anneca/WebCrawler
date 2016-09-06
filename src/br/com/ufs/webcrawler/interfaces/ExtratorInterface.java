@@ -1,5 +1,7 @@
 package br.com.ufs.webcrawler.interfaces;
 
+import br.com.ufs.webcrawler.model.Formulario;
+
 public interface ExtratorInterface {
 
 	/*
@@ -8,7 +10,7 @@ public interface ExtratorInterface {
 	 */
 	public void extrairTecnologias(String url);
 
-	public void extrairInformacoesHospital(String url);
+	public Formulario extrairInformacoesHospital(String url);
 
 	public void extrairAcessibilidade(String url);
 	

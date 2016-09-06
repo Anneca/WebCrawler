@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
+import br.com.ufs.webcrawler.model.Cidade;
 import br.com.ufs.webcrawler.model.Tecnologia;
 import br.com.ufs.webcrawler.util.Conexao;
 
@@ -75,6 +75,27 @@ public class TecnologiaDAO {
 		}
 		comando.close();
 		return tec;
+	}
+
+	public Tecnologia getTecnologiaById(int id) throws SQLException {
+		
+		String sql = "select * from tecnologia tecnologia " + "where tecnologia.id_tecnologia =" + id;
+
+		con.setConnection();
+		Statement comando = con.conexao.createStatement();
+		// System.out.println("Executar consulta:" + sql);
+		ResultSet resultado = comando.executeQuery(sql);
+
+		Tecnologia tecnologia = new Tecnologia();
+
+		while (resultado.next()) {
+
+			tecnologia.setCodigo(resultado.getInt("id_tecnologia"));
+			tecnologia.setDescricao(resultado.getString("cv_descricao"));
+		}
+
+		comando.close();
+		return tecnologia;
 	}
 
 }
