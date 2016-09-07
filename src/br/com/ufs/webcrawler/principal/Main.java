@@ -13,6 +13,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		ExtratorRedesSociais extratorRedesSociais = new ExtratorRedesSociais();
 		ExtratorTecnologias extratorTecnologias = new ExtratorTecnologias();
 		ExtratorInformacoesHospital extratorInformacoesHospital = new ExtratorInformacoesHospital();
 		HospitalDAO hospitalDAO = new HospitalDAO();
@@ -33,10 +34,10 @@ public class Main {
 		for (int i = 0; i < hospitais.size(); i++) {			
 			String url = hospitais.get(i).getUrl();
 			Formulario formulario = extratorInformacoesHospital.extrairInformacoesHospital(url);
-			System.out.println("Tecnologias:");
-			extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""), formulario);
-
-		}
+			System.out.println("RedesSociais:");
+			//extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""), formulario);
+			extratorRedesSociais.extrairRedesSociais(url, formulario);
+			}
 	}
 
 }
