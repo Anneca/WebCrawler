@@ -28,7 +28,7 @@ public class FormularioRedeSocialDAO {
 
 			con.setConnection();
 			Statement comando = con.conexao.createStatement();
-			System.out.println("Executar consulta:" + sql);
+			//System.out.println("Executar consulta:" + sql);
 			comando.execute(sql);
 			comando.close();
 		}
@@ -43,7 +43,7 @@ public class FormularioRedeSocialDAO {
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
-		System.out.println("Executar consulta:" + sql);
+		//System.out.println("Executar consulta:" + sql);
 		ResultSet resultado = comando.executeQuery(sql);
 
 		FormularioRedesSociais formularioRedesSociais = new FormularioRedesSociais();
