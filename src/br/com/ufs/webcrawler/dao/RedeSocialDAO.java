@@ -29,6 +29,7 @@ public class RedeSocialDAO {
 			redeSocial.setDescricao(resultado.getString("cv_descricao"));
 		}
 		comando.close();
+		con.conexao.close();
 		return redeSocial;
 	}
 
@@ -50,6 +51,7 @@ public class RedeSocialDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return redeSocial;
 	}
 

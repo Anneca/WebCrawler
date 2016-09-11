@@ -33,6 +33,7 @@ public class FormularioDAO {
 		comando.execute(sql);
 		Formulario form = consultarFormularioByData(format);
 		comando.close();
+		con.conexao.close();
 		return form;
 
 	}
@@ -56,8 +57,8 @@ public class FormularioDAO {
 			form.setInformacoesInstitucionais(resultado.getString("cv_informacoes_institucionais"));
 			form.setServicos(resultado.getString("cv_servicos"));
 		}
-
 		comando.close();
+		con.conexao.close();
 		return form;
 	}
 

@@ -30,6 +30,7 @@ public class TecnologiaDAO {
 			comando.execute(sql);
 			tec = consultarTecnologiaByNome(nomeTecnologia);
 			comando.close();
+			con.conexao.close();
 			return null;
 		}
 
@@ -74,6 +75,7 @@ public class TecnologiaDAO {
 			tec.setDescricao(resultado.getString("cv_descricao"));
 		}
 		comando.close();
+		con.conexao.close();
 		return tec;
 	}
 
@@ -95,6 +97,7 @@ public class TecnologiaDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return tecnologia;
 	}
 

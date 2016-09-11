@@ -91,7 +91,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 			}
 
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
 
 	}

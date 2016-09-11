@@ -155,7 +155,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 			return form;
 
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
 		return null; 
 	}

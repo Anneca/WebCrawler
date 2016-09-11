@@ -121,7 +121,7 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 			}
 
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
 
 	}

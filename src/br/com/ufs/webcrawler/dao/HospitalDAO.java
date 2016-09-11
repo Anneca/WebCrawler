@@ -35,6 +35,7 @@ public class HospitalDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return lista;
 
 	}
@@ -61,6 +62,7 @@ public class HospitalDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return hospital;
 
 	}
@@ -87,6 +89,7 @@ public class HospitalDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return hospital;
 
 	}

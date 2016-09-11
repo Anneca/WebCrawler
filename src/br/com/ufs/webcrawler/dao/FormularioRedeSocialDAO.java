@@ -31,6 +31,7 @@ public class FormularioRedeSocialDAO {
 			//System.out.println("Executar consulta:" + sql);
 			comando.execute(sql);
 			comando.close();
+			con.conexao.close();
 		}
 
 	}
