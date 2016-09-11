@@ -5,6 +5,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import br.com.ufs.webcrawler.model.Pais;
 import br.com.ufs.webcrawler.util.Conexao;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 
 public class PaisDAO {
 	Conexao con = new Conexao();
@@ -27,6 +32,7 @@ public class PaisDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return pais;
 
 	}

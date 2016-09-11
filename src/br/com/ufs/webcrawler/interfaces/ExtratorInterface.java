@@ -1,7 +1,11 @@
 package br.com.ufs.webcrawler.interfaces;
 
 import br.com.ufs.webcrawler.model.Formulario;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public interface ExtratorInterface {
 
 	/*

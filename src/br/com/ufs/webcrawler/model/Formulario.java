@@ -1,6 +1,10 @@
 package br.com.ufs.webcrawler.model;
 
-import java.util.Date;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 
 public class Formulario {
 

@@ -6,7 +6,13 @@ import java.util.ArrayList;
 import br.com.ufs.webcrawler.dao.HospitalDAO;
 import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.Hospital;
-
+/**
+ * Universidade Federal de Sergipe
+ * Trabalho de Conclusão de Curso II
+ * Projeto WebCrawler - Observatória e-Health
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -19,11 +25,8 @@ public class Main {
 		ArrayList<Hospital> hospitais = new ArrayList<Hospital>();
 
 		try {
-			// conexao.setConnection();
 			hospitais = hospitalDAO.listarHospitais();
-			// formularioTecnologiaDAO.criarFormularioTecnologia(46, 118);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

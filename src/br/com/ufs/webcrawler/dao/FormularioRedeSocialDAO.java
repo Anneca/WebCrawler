@@ -6,7 +6,11 @@ import java.sql.Statement;
 
 import br.com.ufs.webcrawler.model.FormularioRedesSociais;
 import br.com.ufs.webcrawler.util.Conexao;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class FormularioRedeSocialDAO {
 
 	Conexao con = new Conexao();

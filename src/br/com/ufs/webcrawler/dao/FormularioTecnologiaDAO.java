@@ -8,7 +8,11 @@ import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.FormularioTecnologia;
 import br.com.ufs.webcrawler.model.Tecnologia;
 import br.com.ufs.webcrawler.util.Conexao;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class FormularioTecnologiaDAO {
 
 	Conexao con = new Conexao();

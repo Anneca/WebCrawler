@@ -6,7 +6,11 @@ import java.sql.Statement;
 
 import br.com.ufs.webcrawler.model.Cidade;
 import br.com.ufs.webcrawler.util.Conexao;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class CidadeDAO {
 
 	Conexao con = new Conexao();
@@ -29,6 +33,7 @@ public class CidadeDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return cidade;
 
 	}

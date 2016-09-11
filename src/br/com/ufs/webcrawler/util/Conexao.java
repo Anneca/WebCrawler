@@ -3,7 +3,11 @@ package br.com.ufs.webcrawler.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class Conexao {
 
 	public Connection conexao;

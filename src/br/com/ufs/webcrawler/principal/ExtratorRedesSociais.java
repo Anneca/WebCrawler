@@ -12,7 +12,11 @@ import br.com.ufs.webcrawler.enumeration.Tags;
 import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
 import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.RedeSocial;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class ExtratorRedesSociais implements ExtratorInterface {
 
 	Document doc;

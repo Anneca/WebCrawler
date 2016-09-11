@@ -7,6 +7,11 @@ import java.sql.Statement;
 
 import br.com.ufs.webcrawler.model.Hospital;
 import br.com.ufs.webcrawler.util.Conexao;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 
 public class HospitalDAO {
 

@@ -3,7 +3,11 @@ package br.com.ufs.webcrawler.dao;
 import java.sql.SQLException;
 import java.sql.Statement;
 import br.com.ufs.webcrawler.util.Conexao;
-
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class FormularioHospitalDAO {
 
 	Conexao con = new Conexao();

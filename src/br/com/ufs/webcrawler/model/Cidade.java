@@ -1,4 +1,9 @@
 package br.com.ufs.webcrawler.model;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 
 public class Cidade {
 	

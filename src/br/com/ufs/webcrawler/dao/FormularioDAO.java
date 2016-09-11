@@ -10,7 +10,10 @@ import br.com.ufs.webcrawler.model.Cidade;
 import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.Hospital;
 import br.com.ufs.webcrawler.util.Conexao;
-
+/**
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class FormularioDAO {
 
 	Conexao con = new Conexao();
@@ -19,7 +22,7 @@ public class FormularioDAO {
 			String corpoClinico) throws SQLException {
 
 		Date data = new Date(System.currentTimeMillis());
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		String format = formatter.format(data);
 		System.out.println(format);
 
@@ -84,6 +87,7 @@ public class FormularioDAO {
 		}
 
 		comando.close();
+		con.conexao.close();
 		return formulario;
 
 	}

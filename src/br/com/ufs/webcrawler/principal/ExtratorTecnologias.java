@@ -1,6 +1,5 @@
 package br.com.ufs.webcrawler.principal;
 
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -15,8 +14,8 @@ import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.Tecnologia;
 
 /**
- * Classe responsável por identificar quais são as tecnologias utilizadas pelos sites
- * @author Anne
+ * 
+ * @author Anne Caroline Melo Santos
  *
  */
 public class ExtratorTecnologias implements ExtratorInterface {

@@ -7,6 +7,11 @@ import java.sql.Statement;
 import br.com.ufs.webcrawler.model.RedeSocial;
 import br.com.ufs.webcrawler.model.Tecnologia;
 import br.com.ufs.webcrawler.util.Conexao;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 
 public class RedeSocialDAO {
 
