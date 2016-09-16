@@ -43,7 +43,7 @@ public class Conexao {
 		String database = "WEB_CRAWLER_03-09-2016";
 		String url = "jdbc:postgresql://" + host + "/" + database;
 		String user = "postgres";
-		String password = "Enilorac28";
+		String password = "12345678";
 		conexao = DriverManager.getConnection(url, user, password);
 
 	}

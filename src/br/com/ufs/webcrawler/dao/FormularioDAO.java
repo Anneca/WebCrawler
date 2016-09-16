@@ -19,7 +19,7 @@ public class FormularioDAO {
 	Conexao con = new Conexao();
 
 	public Formulario criarFormulario(String servico, String informacoesInstitucionais, String comentarios,
-			String corpoClinico) throws SQLException {
+			String corpoClinico, String Observacao) throws SQLException {
 
 		Date data = new Date(System.currentTimeMillis());
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
@@ -27,8 +27,9 @@ public class FormularioDAO {
 		System.out.println(format);
 
 		String sql = "Insert into formulario (dt_formulario, cv_informacoes_institucionais,"
-				+ "cv_servicos, cv_comentarios, cv_corpo_clinico) values ('" + format + "','"
-				+ informacoesInstitucionais + "','" + servico + "','" + comentarios + "','" + corpoClinico + "')";
+				+ "cv_servicos, cv_comentarios, cv_corpo_clinico, cv_observacao) values ('" + format + "','"
+				+ informacoesInstitucionais + "','" + servico + "','" + comentarios + "','" + corpoClinico + "','" 
+				+ Observacao + "')";
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();

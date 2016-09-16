@@ -36,6 +36,7 @@ public class HospitalDAO {
 			obj.setCidade(cidadeDAO.getCidadeById(resultado.getInt("id_cidade")));
 			obj.setPais(paisDAO.getPaisById(resultado.getInt("id_pais")));
 			obj.setUrl(resultado.getString("cv_site"));
+			obj.setTipoOrganizacao(resultado.getString("cv_tipo_organizacao"));
 			lista.add(obj);
 		}
 
@@ -63,6 +64,7 @@ public class HospitalDAO {
 			hospital.setNome(resultado.getString("cv_site"));
 			hospital.setCidade(cidadeDAO.getCidadeById(resultado.getInt("id_cidade")));
 			hospital.setPais(paisDAO.getPaisById(resultado.getInt("id_pais")));
+			hospital.setTipoOrganizacao(resultado.getString("cv_tipo_organizacao"));
 
 		}
 
@@ -90,7 +92,7 @@ public class HospitalDAO {
 			hospital.setNome(resultado.getString("cv_site"));
 			hospital.setCidade(cidadeDAO.getCidadeById(resultado.getInt("id_cidade")));
 			hospital.setPais(paisDAO.getPaisById(resultado.getInt("id_pais")));
-
+			hospital.setTipoOrganizacao(resultado.getString("cv_tipo_organizacao"));
 		}
 
 		comando.close();

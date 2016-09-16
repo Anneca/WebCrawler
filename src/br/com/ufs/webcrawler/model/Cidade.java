@@ -9,6 +9,7 @@ public class Cidade {
 	
 	int codigo;
 	String descricao;
+	String capital;
 	
 	public int getCodigo() {
 		return codigo;
@@ -22,5 +23,12 @@ public class Cidade {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	public String getCapital() {
+		return capital;
+	}
+	public void setCapital(String capital) {
+		this.capital = capital;
+	}
+	
 
 }

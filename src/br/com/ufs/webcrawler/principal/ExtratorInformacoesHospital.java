@@ -12,6 +12,7 @@ import br.com.ufs.webcrawler.enumeration.Tags;
 import br.com.ufs.webcrawler.interfaces.ExtratorInterface;
 import br.com.ufs.webcrawler.model.Formulario;
 import br.com.ufs.webcrawler.model.Hospital;
+
 /**
  * 
  * @author Anne Caroline Melo Santos
@@ -94,7 +95,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)snapchat.*")) {
 
 						redesSociais = true;
-						
+
 					}
 
 					if (element.outerHtml().matches(".*(?i)fale-conosco.*")
@@ -119,7 +120,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 				}
 
 			}
-	
+
 			System.out.println();
 			System.out.println("Hospital na posição " + url.replaceAll("http://", ""));
 
@@ -147,13 +148,15 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 				System.out.println("Endereço eletrônico para realização de comentários, sugestões e reclamações: SIM ");
 			}
 
-			// Verificando se o site disponibiliza informações sobre o corpo clínico
+			// Verificando se o site disponibiliza informações sobre o corpo
+			// clínico
 			if (corpoClinico) {
 				System.out.println("Corpo Clínico: SIM ");
 			}
-			
+
 			// Criando um formulário
-			Formulario form = formularioDAO.criarFormulario(temServicos, temInfoInstitucional, temComentario, temCorpoClinico);
+			Formulario form = formularioDAO.criarFormulario(temServicos, temInfoInstitucional, temComentario,
+					temCorpoClinico, "");
 			Hospital hospital = hospitalDAO.getHospitalByURLs(url);
 			formularioHospitalDAO.criarFormularioHospital(hospital.getCodigo(), form.getCodigo());
 			return form;
@@ -161,24 +164,24 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		return null; 
+		return null;
 	}
 
 	@Override
 	public void extrairTecnologias(String url) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void extrairAcessibilidade(String url) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void extrairRedesSociais(String url) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }
