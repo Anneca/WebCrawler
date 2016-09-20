@@ -62,7 +62,8 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)procedimento.*")
 							|| element.outerHtml().matches(".*(?i)exame.*")
 							|| element.outerHtml().matches(".*(?i)especialidade.*")
-							|| element.outerHtml().matches(".*(?i)cirurgia.*")) {
+							|| element.outerHtml().matches(".*(?i)cirurgia.*")
+							|| element.outerHtml().matches(".*(?i)tratamento.*")) {
 
 						servicos = true;
 						temServicos = "Sim";
@@ -78,7 +79,8 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)institucionais.*")
 							|| element.outerHtml().matches(".*(?i)informaç.*")
 							|| element.outerHtml().matches(".*(?i)informac.*")
-							|| element.outerHtml().matches(".*(?i)Quem Somos.*")) {
+							|| element.outerHtml().matches(".*(?i)Quem Somos.*")
+							|| element.outerHtml().matches(".*(?i)hospital.*")) {
 
 						informacoesInstitucionais = true;
 						temInfoInstitucional = "Sim";
@@ -156,7 +158,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 
 			// Criando um formulário
 			Formulario form = formularioDAO.criarFormulario(temServicos, temInfoInstitucional, temComentario,
-					temCorpoClinico, "");
+					temCorpoClinico, "Sem Observações!");
 			Hospital hospital = hospitalDAO.getHospitalByURLs(url);
 			formularioHospitalDAO.criarFormularioHospital(hospital.getCodigo(), form.getCodigo());
 			return form;

@@ -1,15 +1,23 @@
 package br.com.ufs.webcrawler.util;
 
-import java.util.Date;
 import java.util.TimerTask;
 
+import br.com.ufs.webcrawler.principal.Main;
+/**
+ * 
+ * @author Anne Caroline Melo Santos
+ *
+ */
 public class Agendador extends TimerTask {
 	
-	Date instanteAtual;
+	Main principal;
 
+	@SuppressWarnings("static-access")
 	@Override
 	public void run() {
-		instanteAtual = new Date();
-		System.out.println(instanteAtual);
+		principal = new Main();
+		// Chamando a classe principal
+		principal.main(null);
+		System.out.println("Executou");
 	}
 }

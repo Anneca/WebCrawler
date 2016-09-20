@@ -38,7 +38,7 @@ public class CheckDisponibilidade {
 				}
 
 				if (element.text().matches(".*(?i)is up.*") && !element.text().equals("")) {
-					System.out.println("Este site está no ar");
+					System.out.println("Este site está no AR");
 					disponibilidade = true;
 
 				}
