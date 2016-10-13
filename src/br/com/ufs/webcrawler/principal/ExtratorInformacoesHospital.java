@@ -63,7 +63,13 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)exame.*")
 							|| element.outerHtml().matches(".*(?i)especialidade.*")
 							|| element.outerHtml().matches(".*(?i)cirurgia.*")
-							|| element.outerHtml().matches(".*(?i)tratamento.*")) {
+							|| element.outerHtml().matches(".*(?i)tratamento.*")
+							|| element.outerHtml().matches(".*(?i)service.*")
+							|| element.outerHtml().matches(".*(?i)exam.*")
+							|| element.outerHtml().matches(".*(?i)treatment.*")
+							|| element.outerHtml().matches(".*(?i)handling.*")
+							|| element.outerHtml().matches(".*(?i)specialt.*")
+							|| element.outerHtml().matches(".*(?i)patient.*")) {
 
 						servicos = true;
 						temServicos = "Sim";
@@ -80,7 +86,10 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)informaç.*")
 							|| element.outerHtml().matches(".*(?i)informac.*")
 							|| element.outerHtml().matches(".*(?i)Quem Somos.*")
-							|| element.outerHtml().matches(".*(?i)hospital.*")) {
+							|| element.outerHtml().matches(".*(?i)hospital.*")
+							|| element.outerHtml().matches(".*(?i)about.*")
+							|| element.outerHtml().matches(".*(?i)hospital.*")
+							|| element.outerHtml().matches(".*(?i)overview.*")) {
 
 						informacoesInstitucionais = true;
 						temInfoInstitucional = "Sim";
@@ -104,7 +113,8 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)Fale Conosco.*")
 							|| element.outerHtml().matches(".*(?i)email.*")
 							|| element.outerHtml().matches(".*(?i)e-mail.*")
-							|| element.outerHtml().matches(".*(?i)contato.*")) {
+							|| element.outerHtml().matches(".*(?i)contato.*")
+							|| element.outerHtml().matches(".*(?i)contact.*")) {
 
 						comentarios = true;
 						temComentario = "Sim";
@@ -114,7 +124,12 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)Corpo Clínico.*")
 							|| element.outerHtml().matches(".*(?i)Equipe Médica.*")
 							|| element.outerHtml().matches(".*(?i)equipe-medica.*")
-							|| element.outerHtml().matches(".*(?i)funcionario.*")) {
+							|| element.outerHtml().matches(".*(?i)funcionario.*")
+							|| element.outerHtml().matches(".*(?i)doctor.*")
+							|| element.outerHtml().matches(".*(?i)professional.*")
+							|| element.outerHtml().matches(".*(?i)staff.*")
+							|| element.outerHtml().matches(".*(?i)surgeon.*")
+							|| element.outerHtml().matches(".*(?i)physicians.*")) {
 
 						corpoClinico = true;
 						temCorpoClinico = "Sim";
