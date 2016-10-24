@@ -23,7 +23,7 @@ public class HospitalDAO {
 
 		ArrayList<Hospital> lista = new ArrayList<Hospital>();
 
-		String sql = "select * from hospital";
+		String sql = "select * from hospital where cv_tem_site='Sim'";
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
