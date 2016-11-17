@@ -40,7 +40,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 				//Frameworks
 				if (element.outerHtml().matches(".*(?i)framework.*") && !element.text().equals("")) {
 					String tec1 = element.text();
-					System.out.println(tec1);
+					//System.out.println(tec1);
 					tecnologiaDAO.criartecnologia(tec1);
 					tecnologia = tecnologiaDAO.consultarTecnologiaByNome(tec1);
 					formularioTecnologia.criarFormularioTecnologia(tecnologia.getCodigo(), form.getCodigo());
@@ -51,7 +51,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 				if (element.outerHtml().matches(".*(?i)Web-Server.*") && !element.text().equals("")) {
 					
 					String tec1 = element.text();
-					System.out.println(tec1);
+					//System.out.println(tec1);
 					tecnologiaDAO.criartecnologia(tec1);
 					tecnologia = tecnologiaDAO.consultarTecnologiaByNome(tec1);
 					formularioTecnologia.criarFormularioTecnologia(tecnologia.getCodigo(), form.getCodigo());
@@ -61,7 +61,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 				// Bibliotecas Javascript
 				if (element.outerHtml().matches(".*(?i)javascript.*") && !element.text().equals("")) {
 					String tec1 = element.text();
-					System.out.println(tec1);
+					//System.out.println(tec1);
 					tecnologiaDAO.criartecnologia(tec1);
 					tecnologia = tecnologiaDAO.consultarTecnologiaByNome(tec1);
 					formularioTecnologia.criarFormularioTecnologia(tecnologia.getCodigo(), form.getCodigo());
@@ -71,7 +71,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 				//Content Management Systems
 				if (element.outerHtml().matches(".*(?i)cms.*") && !element.text().equals("")) {
 					String tec1 = element.text();
-					System.out.println(tec1);
+					//System.out.println(tec1);
 					tecnologiaDAO.criartecnologia(tec1);
 					tecnologia = tecnologiaDAO.consultarTecnologiaByNome(tec1);
 					formularioTecnologia.criarFormularioTecnologia(tecnologia.getCodigo(), form.getCodigo());
@@ -81,7 +81,7 @@ public class ExtratorTecnologias implements ExtratorInterface {
 				//Documentation Information
 				if (element.outerHtml().matches(".*(?i)docinfo/html.*") && !element.text().equals("")) {
 					String tec1 = element.text();
-					System.out.println(tec1);
+					//System.out.println(tec1);
 					tecnologiaDAO.criartecnologia(tec1);
 					tecnologia = tecnologiaDAO.consultarTecnologiaByNome(tec1);
 					formularioTecnologia.criarFormularioTecnologia(tecnologia.getCodigo(), form.getCodigo());

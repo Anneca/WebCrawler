@@ -42,21 +42,21 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 
 					if (element.outerHtml().matches(".*(?i)facebook.*")) {
 						String nomeRedeSocial = "Facebook";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)twitter.*")) {
 						String nomeRedeSocial = "Twitter";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)youtube.*")) {
 						String nomeRedeSocial = "Youtube";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
@@ -64,7 +64,7 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 
 					if (element.outerHtml().matches(".*(?i)linkedin.*")) {
 						String nomeRedeSocial = "Linkedin";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
@@ -72,21 +72,21 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 					}
 					if (element.outerHtml().matches(".*(?i)pinterest.*")) {
 						String nomeRedeSocial = "Pinterest";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)foursquare.*")) {
 						String nomeRedeSocial = "Foursquare";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)instagram.*")) {
 						String nomeRedeSocial = "Instagram";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
@@ -94,28 +94,28 @@ public class ExtratorRedesSociais implements ExtratorInterface {
 
 					if (element.outerHtml().matches(".*(?i)blogger.*")) {
 						String nomeRedeSocial = "Blogger";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)snapchat.*")) {
 						String nomeRedeSocial = "Snapchat";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)google+.*")) {
 						String nomeRedeSocial = "Google+";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 
 					}
 					if (element.outerHtml().matches(".*(?i)flickr.*")) {
 						String nomeRedeSocial = "Flickr";
-						System.out.println(nomeRedeSocial);
+						//System.out.println(nomeRedeSocial);
 						redeSocial = redeSocialDAO.consultarRedeSocialByNome(nomeRedeSocial);
 						formularioRedeSocialDAO.criarFormularioRedeSocial(redeSocial.getCodigo(), form.getCodigo());
 

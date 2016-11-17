@@ -23,7 +23,7 @@ public class FormularioRedeSocialDAO {
 
 		if (existe) {
 
-			System.out.println("Esse registro já existe na tabela");
+//			System.out.println("Esse registro já existe na tabela");
 
 		} else {
 

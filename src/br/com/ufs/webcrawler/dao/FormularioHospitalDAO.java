@@ -17,7 +17,7 @@ public class FormularioHospitalDAO {
 
 
 		String sql = "Insert into formulario_hospital (id_formulario, id_hospital) values ("+ formulario + "," + hospital + ")";
-
+		System.out.println(sql);
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
 		System.out.println("Executar consulta:" + sql);

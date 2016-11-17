@@ -69,6 +69,9 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)treatment.*")
 							|| element.outerHtml().matches(".*(?i)handling.*")
 							|| element.outerHtml().matches(".*(?i)specialt.*")
+							|| element.outerHtml().matches(".*(?i)servicio.*")
+							|| element.outerHtml().matches(".*(?i)prestacione.*")
+							|| element.outerHtml().matches(".*(?i)especialidades.*")
 							|| element.outerHtml().matches(".*(?i)patient.*")) {
 
 						servicos = true;
@@ -81,6 +84,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)missao.*")
 							|| element.outerHtml().matches(".*(?i)visao.*")
 							|| element.outerHtml().matches(".*(?i)missão.*")
+							|| element.outerHtml().matches(".*(?i)misión.*")
 							|| element.outerHtml().matches(".*(?i)visão.*")
 							|| element.outerHtml().matches(".*(?i)institucionais.*")
 							|| element.outerHtml().matches(".*(?i)informaç.*")
@@ -89,6 +93,9 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)hospital.*")
 							|| element.outerHtml().matches(".*(?i)about.*")
 							|| element.outerHtml().matches(".*(?i)hospital.*")
+							|| element.outerHtml().matches(".*(?i)inicio.*")
+							|| element.outerHtml().matches(".*(?i)institución.*")
+							|| element.outerHtml().matches(".*(?i)conozcanos.*")
 							|| element.outerHtml().matches(".*(?i)overview.*")) {
 
 						informacoesInstitucionais = true;
@@ -114,6 +121,7 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)email.*")
 							|| element.outerHtml().matches(".*(?i)e-mail.*")
 							|| element.outerHtml().matches(".*(?i)contato.*")
+							|| element.outerHtml().matches(".*(?i)contacto.*")
 							|| element.outerHtml().matches(".*(?i)contact.*")) {
 
 						comentarios = true;
@@ -129,7 +137,13 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 							|| element.outerHtml().matches(".*(?i)professional.*")
 							|| element.outerHtml().matches(".*(?i)staff.*")
 							|| element.outerHtml().matches(".*(?i)surgeon.*")
-							|| element.outerHtml().matches(".*(?i)physicians.*")) {
+							|| element.outerHtml().matches(".*(?i)Cuerpo Médico.*")
+							|| element.outerHtml().matches(".*(?i)Cuerpo Clínico.*")
+							|| element.outerHtml().matches(".*(?i)apoyo Clínico.*")
+							|| element.outerHtml().matches(".*(?i)Clínico.*")
+							|| element.outerHtml().matches(".*(?i)physicians.*")
+							
+							) {
 
 						corpoClinico = true;
 						temCorpoClinico = "Sim";
@@ -138,8 +152,8 @@ public class ExtratorInformacoesHospital implements ExtratorInterface {
 
 			}
 
-			System.out.println();
-			System.out.println("Hospital na posição " + url.replaceAll("http://", ""));
+//			System.out.println();
+//			System.out.println("Hospital na posição " + url.replaceAll("http://", ""));
 
 			// Verificando se o site disponibiliza informações referentes
 			// aos serviços

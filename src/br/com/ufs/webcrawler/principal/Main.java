@@ -37,12 +37,14 @@ public class Main {
 
 			for (int i = 0; i < hospitais.size(); i++) {
 				url = hospitais.get(i).getUrl();
+				System.out.println(url.replaceAll("http://", ""));
 				disponivel = verificador.verificarDisponibilidadeSite(url.replaceAll("http://", ""));
+				System.out.println(disponivel);
 				if (disponivel) {
 					Formulario formulario = extratorInformacoesHospital.extrairInformacoesHospital(url);
-					System.out.println("Tecnologias:");
+					//System.out.println("Tecnologias:");
 					extratorTecnologias.extrairTecnologias(url.replaceAll("http://", ""), formulario);
-					System.out.println("Redes Sociais:");
+					//System.out.println("Redes Sociais:");
 					extratorRedesSociais.extrairRedesSociais(url, formulario);
 				} else {
 					// Criando um formulário para um hospital cujo o site está
@@ -52,7 +54,7 @@ public class Main {
 							"Site fora do AR");
 					Hospital hospital = hospitalDAO.getHospitalByURLs(url);
 					formularioHospitalDAO.criarFormularioHospital(hospital.getCodigo(), form.getCodigo());
-					System.out.println("Tente outra hora amiguinho!!");
+					//System.out.println("Tente outra hora amiguinho!!");
 				}
 			}
 

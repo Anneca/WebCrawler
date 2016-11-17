@@ -23,7 +23,6 @@ public class TecnologiaDAO {
 		consultarTecnologiaByNome(nomeTecnologia);
 
 		if (verificarTecnologiaByNome(nomeTecnologia)) {
-			System.out.println("Tecnologia já cadastrada");
 			return null;
 		} else {
 
@@ -31,7 +30,6 @@ public class TecnologiaDAO {
 
 			con.setConnection();
 			Statement comando = con.conexao.createStatement();
-			System.out.println("Executar insercao:" + sql);
 			comando.execute(sql);
 			tec = consultarTecnologiaByNome(nomeTecnologia);
 			comando.close();
@@ -48,7 +46,6 @@ public class TecnologiaDAO {
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
-		// System.out.println("Executar consulta:" + sql);
 		ResultSet resultado = comando.executeQuery(sql);
 
 		Tecnologia tec = new Tecnologia();
@@ -69,7 +66,6 @@ public class TecnologiaDAO {
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
-		// System.out.println("Executar consulta:" + sql);
 		ResultSet resultado = comando.executeQuery(sql);
 
 		Tecnologia tec = new Tecnologia();
@@ -90,7 +86,6 @@ public class TecnologiaDAO {
 
 		con.setConnection();
 		Statement comando = con.conexao.createStatement();
-		// System.out.println("Executar consulta:" + sql);
 		ResultSet resultado = comando.executeQuery(sql);
 
 		Tecnologia tecnologia = new Tecnologia();

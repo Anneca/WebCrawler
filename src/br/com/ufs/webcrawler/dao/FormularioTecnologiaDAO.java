@@ -25,7 +25,7 @@ public class FormularioTecnologiaDAO {
 
 		if (existe) {
 
-			System.out.println("Esse registro já existe na tabela");
+			//System.out.println("Esse registro já existe na tabela");
 			
 		} else {
 			
@@ -34,7 +34,7 @@ public class FormularioTecnologiaDAO {
 
 			con.setConnection();
 			Statement comando = con.conexao.createStatement();
-			System.out.println("Executar consulta:" + sql);
+//			System.out.println("Executar consulta:" + sql);
 			comando.execute(sql);
 			comando.close();
 			con.conexao.close();
